@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Requirements
+**COMPLETE**Make sure all fields are required (1 point)
+
+**COMPLETE**Use correct input types for the fields, for example, type = “reset” for the Reset button (1 point)
+
+**COMPLETE**Use placeholders, such as “Enter Password” (1 point)
+
+**COMPLETE**Use classes to add some styles to the form to make it beautiful (1 point)
+
+**COMPLETE**Add a page title and define the language (1 point)
+
+**COMPLETE**Algin the text labels and text fields (1 extra point)
+
+-->
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <style>
+        .body_style{
+            text-align: center;
+            background-color: gray;
+        }
+        .form_style{
+            text-align: center;
+            background-color: white;
+            padding-bottom: 20px;
+            padding-top: 5px;
+            border: 5px solid black;
+            margin: 0 auto;
+            width: 50%;
+
+        }
+        .button{
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 5px;
+            background-color: gray;
+            color:white;
+            font-weight: bold;
+            border: 2px solid black;
+
+                }
+        .button:hover {
+            background-color: #45a049;
+            }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+
+        label {
+            text-align: left;
+            margin-right: 5px;
+            width: 150px;
+            display: inline-block; 
+                
+            }
+
+        input {
+            width: 200px; 
+            margin-bottom: 10px;
+            }
+    </style>
+
+</head>
+
+<body class="body_style">
+
+<div class="form_style">
+
+<h2>REGISTRATION FORM</h2>
+
+<form>
+    <!--FIRST NAME-->
+    <p>
+    <label for="firstname">First Name: </label>
+    <input type="text" id="firstname" name="firstname" placeholder="Enter First Name" required><br>
+    </p>
+    
+    <!--LAST NAME-->
+    <p>
+    <label for="lastname">Last Name: </label>
+    <input type="text" id="lastname" name="lastname" placeholder="Enter Last Name" required><br>
+</p>
+
+    <!--USERNAME-->
+    <p>
+    <label for="username">Username: </label>
+    <input type="text" id="username" name="username" placeholder="Enter Username" required><br>
+</p>
+
+    <!--E-MAIL-->
+    <p>
+    <label for="email">E-mail: </label>
+    <input type="email" id="email" name="email" placeholder="example@email.com" required><br>
+</p>
+
+    <!--PASSWORD-->
+    <p>
+    <label for="password">Password: </label>
+    <input type="password" id="password" name="password" placeholder="Enter Password" required><br>
+</p>
+
+    <!--CONFIRM PASSWORD-->
+    <p>
+    <label for="confpass">Confirm Password: </label>
+    <input type="password" id="confpass" name="confpass" placeholder="Repeat Password" required><br>
+</p>
+
+    <!--SUBMIT-->
+    <p>
+    <input type="submit" value="Register" class="button">
+
+    <!--RESET-->
+    <input type="reset" value="Reset" class="button">
+    </p>
+
+</form>
+</div>
+
+</body>
+
+</html>
