@@ -3,11 +3,13 @@
 <head>
 <title>Login Form</title>
 
+<!--Issue: Move style inside of header-->
 <style>
 form {
     border: 3px solid #f1f1f1;
 }
 
+/*Issue: Add Comma */
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -22,9 +24,12 @@ input[type=text], input[type=password] {
 
 <h2>Login Form</h2>
 
+<!--Issue: Change to post-->
 <form action="/action_page.php" method="post">
 
 <div>
+<!--Issue: Change name to profile.jpg-->
+<!--Issue: add /img -->
 <img src="/IT353_Projects/img/profile.jpg" alt="Avatar">
 </div>
 
@@ -35,7 +40,8 @@ input[type=text], input[type=password] {
 
 <label><b>Password</b></label>
 <input type="password" placeholder="Enter Password" name="psw" required>
-        
+
+<!--Issue: Change Button type to submit-->
 <button type="submit">Login</button>
 <input type="checkbox" checked="checked"> Remember me
 </div>
