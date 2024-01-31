@@ -14,7 +14,7 @@ body, html {
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(farthest-side ellipse at 50% 70%, hsla(210, 1%, 78%, 0.73) 100px, rgba(150, 150, 150, 0.7) 400px, hsla(225, 4%, 18%, 0.8) 100%);
+    background-image: radial-gradient(farthest-side ellipse at 50% 20%, hsla(210, 1%, 78%, 0.73) 100px, rgba(20, 150, 150, 0.7) 400px, hsla(225, 4%, 18%, 0.8) 100%);
     z-index: -3;
 }
 
@@ -25,16 +25,16 @@ body, html {
     top: 30%;
     height: 350px;
     width: 350px;
-    border-radius: 60px;
+    border-radius: 900px;
     background: #fff;
-    background-image: linear-gradient(#ffffff 40px, #ddecf2 210px, #d3e3e9);
+    background-image: linear-gradient(#ffffff 40px, #F5F5DC 210px, #F5F5DC);
 }
 
 .t3:before {
     content: "";
     position: absolute;
     box-shadow: 0px -4px 3px 3px #b8bdca inset;
-    border-radius: 60px;
+    border-radius: 900px;
     opacity: 0.6;
     height: 100%;
     width: 100%;
@@ -45,10 +45,10 @@ body, html {
 .t3:after {
     content: "";
     height: 17px;
-    width: 300px;
+    width: 50px;
     position: absolute;
     top: 97%;
-    margin-left: 25px;
+    margin-left: 155px;
     background: #2a2a2b;
 	-webkit-filter: blur(7px); /*Chrome, Opera*/
     z-index: -1;
@@ -56,9 +56,9 @@ body, html {
 
 .t4 {
     position: relative;
-    margin: 71px;
-    width: 210px;
-    height: 210px;
+    margin: 25px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     background-image: linear-gradient(#f9fdff, #d9eaf8);
     box-shadow: 0px 0px 28px -8px #eaf7fb;
@@ -107,8 +107,8 @@ body, html {
 .t4:before {
     content: "";
     position: absolute;
-    width: 210px;
-    height: 210px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     box-shadow: 0px 15px 24px -5px #7a8fae;
     z-index: 10;
@@ -116,8 +116,8 @@ body, html {
 
 .t4:after {
     content: "";
-    left: 0px;
-    top: 0px;
+    left: 300px;
+    top: 300px;
     position: absolute;
     width: 210px;
     height: 210px;
@@ -130,7 +130,7 @@ body, html {
 #second, #minute, #hour {
     position: absolute;
     left: 50%;
-    height: 210px;
+    height: 300px;
     width: 10px;
     margin-left: -5px;
 }
