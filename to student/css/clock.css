@@ -119,8 +119,8 @@ body, html {
     left: 300px;
     top: 300px;
     position: absolute;
-    width: 210px;
-    height: 210px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     box-shadow: 0px 4px 4px -1px #7a8fae;
     z-index: 9;
