@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(13,2,48);
+}
+
+.star {
+    position: absolute;
+    width : 100%;
+    height : 600px;
+    animation: glow 2s ease-in infinite;
+}
+
+.star1{
+    background: url(../img/stars1.png) no-repeat center center;
+}
+
+.star2{
+    background: url(../img/stars2.png) no-repeat center center;
+    animation-delay: 0.8s;
+}
+
+.star3{
+    background: url(../img/stars3.png) no-repeat center center;
+    animation-delay: 1.2s;
+}
+
+@keyframes glow{
+    10% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+}
