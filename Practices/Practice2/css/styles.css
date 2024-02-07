@@ -8,7 +8,7 @@
 }
 
 #wrapper {
-   position: static; 
+   position: relative; 
    animation: walks 3s;
    
 
@@ -38,10 +38,10 @@
 /**Moves zombie across the screen*/
 @keyframes walks{
    from {
-        left: 0px;
+        right: 0px;
    }
    to{
-        left: 100px;
+        right: 100px;
    }
 }
 
