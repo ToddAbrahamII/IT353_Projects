@@ -3,13 +3,12 @@
     height: 312px;
     background-image:url("../img/walkingdead.png");
     animation: plays 1.8s steps(10) infinite;
-
     margin-left: auto;
 }
 
 #wrapper {
    position: relative; 
-   animation: walks 3s;
+   animation: walks 8s infinite;
    
 
 }
@@ -37,12 +36,24 @@
 
 /**Moves zombie across the screen*/
 @keyframes walks{
-   from {
+   0%, 100% {
         right: 0px;
+        top: 0px;
    }
-   to{
-        right: 100px;
+   25% {
+        right: 500px;
+        top: 100px;
    }
+   50% {
+        right: 1000px;
+        top: -50px;
+   }
+   75% {
+        right: 1500px;
+        top: 20px;
+   }
+
+
 }
 
 
