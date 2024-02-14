@@ -1,0 +1,50 @@
+#zombie {
+    width: 200px;
+    height: 312px;
+    background-image:url("../img/walkingdead.png");
+    animation: plays 1.8s steps(10) infinite;
+    margin-left: auto;
+}
+
+
+
+
+/**Plays walking animation*/
+@keyframes plays{
+    from {background-position: 0px;}
+    to {background-position: -2000px;}
+}
+
+/**Fades image in and out*/
+@keyframes fade{
+    from {
+        opacity:100%;
+    }
+    to {
+        opacity:0%;
+    }
+}
+
+/**Moves zombie across the screen*/
+@keyframes walks{
+   0%, 100% {
+        right: 0px;
+        top: 0px;
+   }
+   25% {
+        right: 500px;
+        top: 100px;
+   }
+   50% {
+        right: 1000px;
+        top: -50px;
+   }
+   75% {
+        right: 1500px;
+        top: 20px;
+   }
+
+
+}
+
+

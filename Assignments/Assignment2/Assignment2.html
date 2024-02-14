@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zombie</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script>
+
+            function docReady()
+            {
+                window.addEvenListener('keydown', moveZombie);
+            }
+            
+            //Function to Move the Zombie
+            function moveZombie(evt){
+                switch (evt.keyCode){
+                    //Left Arrow
+                    case 37: //call function to move to left
+
+                    break;
+
+                    //Up Arrow
+                    case 38:
+
+                    break;
+
+                    //Right Arrow
+                    case 39:
+
+                    break;
+
+                    //Down Arrown
+                    case 40:
+
+                    break;
+
+
+                }
+            }
+
+            function moveToLeft() {
+                //getElement of ZOmbie and get value for the move to the left. When arrow pressed move pixels to the left
+            }
+
+        </script>
+    </head>
+    <body onload = "docReady()">
+        <h1>This is a scary zombie</h1>
+
+        <div id="zombie" style="position:absolute;left:550px;top:50px"></div>
+
+    </div>
+
+    </body>
+</html>
