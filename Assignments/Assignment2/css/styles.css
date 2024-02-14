@@ -6,8 +6,9 @@
     margin-left: auto;
 }
 
-
-
+.flipped {
+    transform: scaleX(-1);
+}
 
 /**Plays walking animation*/
 @keyframes plays{

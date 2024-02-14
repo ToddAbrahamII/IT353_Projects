@@ -5,41 +5,73 @@
         <link rel="stylesheet" href="css/styles.css">
         <script>
 
+            var zombie;
+
             function docReady()
             {
-                window.addEvenListener('keydown', moveZombie);
+                window.addEventListener('keydown', moveZombie);
             }
             
             //Function to Move the Zombie
             function moveZombie(evt){
                 switch (evt.keyCode){
                     //Left Arrow
-                    case 37: //call function to move to left
-
+                    case 37: 
+                        moveToLeft();
                     break;
 
                     //Up Arrow
                     case 38:
-
+                        moveToUp();
                     break;
 
                     //Right Arrow
                     case 39:
-
+                        moveToRight();
                     break;
 
-                    //Down Arrown
+                    //Down Arrow
                     case 40:
-
+                        moveToDown();
                     break;
 
 
                 }
             }
 
+            //Shifts zombie to left by 10 pixels
             function moveToLeft() {
-                //getElement of ZOmbie and get value for the move to the left. When arrow pressed move pixels to the left
+                //getElement of Zombie and get value for the move to the left. When arrow pressed move pixels to the left
+                zombie = document.getElementById('zombie'); 
+                var currentLeft = parseFloat(getComputedStyle(zombie).left);
+                zombie.style.left = (currentLeft - 10) + 'px';
+                zombie.classList.remove('flipped');
             }
+
+            //Shifts zombie to right by 10 pixels
+            function moveToRight() {
+                //getElement of Zombie and get value for the move to the right. When arrow pressed move pixels to the right
+                zombie = document.getElementById('zombie');
+                var currentLeft = parseFloat(getComputedStyle(zombie).left);
+                zombie.style.left = (currentLeft + 10) + 'px';
+                zombie.classList.add('flipped'); 
+            }
+
+            //Shifts zombie up by 10 pixels
+            function moveToUp() {
+                zombie = document.getElementById('zombie');
+                var currentTop = parseFloat(getComputedStyle(zombie).top);
+                zombie.style.top = (currentTop - 10) + 'px';
+            }
+
+            //Shifts zombie down by 10 pixels
+            function moveToDown() {
+                zombie = document.getElementById('zombie');
+                var currentTop = parseFloat(getComputedStyle(zombie).top);
+                zombie.style.top = (currentTop + 10) + 'px';
+            }
+
+
 
         </script>
     </head>
