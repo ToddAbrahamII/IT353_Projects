@@ -1,5 +1,3 @@
-// src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-
 $(document).ready(function() {
 
 //Gets Value From Sliders
@@ -13,6 +11,13 @@ var hue = $('#sliderHue').val();
 var grayscale  = $('#sliderGray').val();
 var blur = $('#sliderBlur').val();
 
+console.log("Opacity:", opacity);
+console.log("Saturation:", saturation);
+console.log("Brightness:", brightness);
+console.log("Hue:", hue);
+console.log("Grayscale:", grayscale);
+console.log("Blur:", blur);
+
 //Get the big picture
 //$("#imgManipulated").css('filter' + settings);
 
@@ -20,13 +25,15 @@ var blur = $('#sliderBlur').val();
 var settings ='blur('+ blur + 'px) ' +
             'brightness('+ brightness + '%) ' +
             'opacity('+ opacity + '%) ' +
-            'saturation(' + saturation + '%) ' +
-            'hue(' + hue + 'deg) ' + 
-            'grayscale(' + grayscale + '%) ';
+            'saturate(' + saturation + '%) ' +
+            'hue-rotate(' + hue + 'deg) ' + 
+            'grayscale(' + grayscale + '%)';
 
+
+console.log("Settings:", settings);
             
 //Get the big picture
-$("#imgManipulated").css('filter: ' +  settings);
+$('#imgManipulated').css("filter" , settings);
 
 
 });//Input Function
