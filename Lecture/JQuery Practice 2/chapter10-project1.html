@@ -30,6 +30,11 @@ $(function() {
 
 //step 4 change the “src” of the big picture 
             $("#imgManipulated img").attr("src", medPath)
+
+            var caption = $(this).attr("alt") + "<br>" + $(this).attr("title");
+            $("#imgManipulated figcaption").html(caption);
+
+
     });
 });
 </script>      
