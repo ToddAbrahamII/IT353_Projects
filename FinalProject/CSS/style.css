@@ -91,8 +91,13 @@ cursor: pointer;
 		display: none;
 	}
 
-	.Welcome_Section{
-		background-image: url("../CSS/Bookshelf.png");
-		text-align: "Center";
+	.announcement_background{
+		background-image: url('../Img/Bookshelf.png'); /* Replace 'your-image.jpg' with your actual image file path */
+		background-size: cover; /* Adjust the background size as needed */
+		background-position: center; /* Adjust the background position as needed */
+		height: 400px; /* Set the desired height for your section */
+		color: #fff; /* Set text color to be visible against the background */
+		text-align: center; /* Center text content if needed */
+		padding: 20px;
 	}
 }
