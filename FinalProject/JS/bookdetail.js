@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add click event listener to the button
     rateButton.addEventListener("click", function () {
         // Open a new window with the desired HTML page
-        var popupWindow = window.open("../HTML/bookrater.html", "_blank", "width=800,height=600");
+        var popupWindow = window.open("../HTML/bookrater.html", "_blank", "width=900,height=600");
 
         // Center the popup window on the screen
         if (popupWindow) {
