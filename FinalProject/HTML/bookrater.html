@@ -4,11 +4,43 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../CSS/bookdetailstyle.css">
+        <link rel="stylesheet" href="../CSS/bookrater.css">
         <title>Book Details</title>
     </head>
 <body>
-        <h1>Hello, Lets do this</h1>
+        <h1 class="section-title">How Would You Rate This Book?</h1>
+
+        <div class="container">
+            <div class="book-info">
+                <img src="../Img/Book Covers Small/ITSmall.jpg" alt="Book Cover">
+                <div class="details">
+                    <h2>Title: <span id="title">Book Title</span></h2>
+                    <p>Author: <span id="author">Author Name</span></p>
+                    <p>Publisher: <span id="publisher">Publisher Name</span></p>
+                    <p>Year Published: <span id="year">Year</span></p>
+                    <div class="rating">
+                    <span class="star" data-rating="1">&#9733;</span>
+                    <span class="star" data-rating="2">&#9733;</span>
+                    <span class="star" data-rating="3">&#9733;</span>
+                    <span class="star" data-rating="4">&#9733;</span>
+                    <span class="star" data-rating="5">&#9733;</span>
+                    </div>
+                    <textarea id="review" placeholder="Write your thoughts..."></textarea>
+                </div>
+            </div>
+        </div>
+
+    
+
+
+        <div>
+            <button>Submit</button>
+            <button>Cancel</button>
+        </div>
+
+
+
+
 </body>
-<script src="../JS/bookdetail.js"></script>
+<script src="../JS/bookrater.js"></script>
 </html>
