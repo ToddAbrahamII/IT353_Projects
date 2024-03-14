@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var myBooksButton = document.getElementById("my-books-button");
     var wishlistButton = document.getElementById("wishlist-button");
 
+
     // Add click event listeners
     myBooksButton.addEventListener("click", handleButtonClick);
     wishlistButton.addEventListener("click", handleButtonClick);
@@ -25,4 +26,19 @@ document.addEventListener("DOMContentLoaded", function () {
             button.classList.remove("clicked");
         }, 2000); // 2000 milliseconds (2 seconds) in this example
     }
+
+    // Add click event listener to the button
+    rateButton.addEventListener("click", function () {
+        // Open a new window with the desired HTML page
+        var popupWindow = window.open("../HTML/bookrater.html", "_blank", "width=800,height=600");
+
+        // Center the popup window on the screen
+        if (popupWindow) {
+            var left = (window.screen.width - popupWindow.outerWidth) / 2;
+            var top = (window.screen.height - popupWindow.outerHeight) / 2;
+            popupWindow.moveTo(left, top);
+        }
+    });
+
+
 });
