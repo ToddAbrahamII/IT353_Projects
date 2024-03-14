@@ -12,3 +12,26 @@ stars.forEach(star => {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  var submitBtn = document.getElementById("submit-btn");
+  var cancelBtn = document.getElementById("cancel-btn");
+
+  submitBtn.addEventListener("click", function() {
+      submitAction();
+  });
+
+  cancelBtn.addEventListener("click", function() {
+      closeWindow();
+  });
+
+  function submitAction() {
+      alert("Submission successful!");
+      closeWindow();
+  }
+
+  function closeWindow() {
+      window.close();
+  }
+});
+
