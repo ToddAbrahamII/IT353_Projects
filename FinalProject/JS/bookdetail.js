@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(function () {
             button.disabled = false;
             button.classList.remove("clicked");
-        }, 2000); //2 Seconds
+        }, 2000); //Long Time Disabled
     }
 
     rateButton.addEventListener("click", function () {
