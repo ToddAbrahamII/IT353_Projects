@@ -22,6 +22,7 @@ a{
 	align-items: center;
 	padding-top: 1rem;
 	border-bottom: 2px black solid;
+	text-decoration: none;
 }
 
 /* logo style */
