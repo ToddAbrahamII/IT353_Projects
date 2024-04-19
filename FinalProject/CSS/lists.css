@@ -1,0 +1,207 @@
+/*NavBar*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: all 0.4s;
+}
+body{
+	font-family: sans-serif;
+}
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+/* navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    border-bottom: 2px black solid;
+}
+
+/* logo style */
+.logo img {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav.mr-auto {
+    margin-right: auto;
+}
+
+.navbar-nav.ml-auto {
+    margin-left: auto;
+}
+
+.navbar-nav li {
+    margin-right: 1rem;
+}
+
+.navbar-nav li:last-child {
+    margin-right: 0;
+}
+
+
+.hamburger-menu{
+	padding-right: 1px;
+	cursor: pointer;
+}
+
+.hamburger-menu .line{
+display: block;
+width:2.5rem;
+height: 2px;
+margin-bottom: 10px;
+background-color: black;
+cursor: pointer;
+}
+
+.nav-menu{
+	position: fixed;
+	width: 94%;
+	top: 6rem;
+	left: 18px;
+	background-color: rgb(255, 255, 255);
+	font-weight: 600;
+
+}
+.nav-menu a{
+	display: block;
+	text-align: center;
+	padding: 5px 0;
+}
+.nav-menu a:hover{
+	background-color:lightblue;
+}
+
+.hide{
+	display: none;
+}
+
+/* for Desktop view */
+@media screen and (min-width:600px){
+
+	.navbar{
+		justify-content: space-around;
+	}
+	.nav-menu{
+		display: block;
+		position: static;
+		width: auto;
+		margin-right:10px;
+		background: none;
+	}
+	.nav-menu a{
+		display: inline-block;
+		padding: 10px 15px;
+	}
+	.nav-menu a:hover{
+		background-color: black;
+		color: white;
+		border-radius: 5px;
+	}
+	.hamburger-menu{
+		display: none;
+	}
+
+/*Body*/
+.book-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.book-entry img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+.review-section {
+    margin-top: 10px; 
+}
+
+.review-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px; 
+}
+
+.review-section p {
+    margin: 0; 
+    font-size: 1em; 
+}
+
+
+
+/* Footer */
+        footer {
+            background-color: black;
+            color: #fff;
+            padding: 20px 0;
+        }
+    
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: black;
+        }
+    
+    
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+            background-color: black;
+        }
+    
+        .footer-section h3 {
+            color: #fff;
+        }
+    
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+            color: white;
+        }
+    
+        .footer-section ul li {
+            margin-bottom: 8px;
+            color: white;
+        }
+    
+        .social-icon {
+            font-size: 20px;
+            color: #fff;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+    
+    
+        .footer-bottom {
+            text-align: center;
+            padding-top: 10px;
+            border-top: 1px solid #555;
+            background-color: black;
+        }
+    
+        .footer-section.links a {
+            color: white;
+            text-decoration: none;
+        }
+    
+}

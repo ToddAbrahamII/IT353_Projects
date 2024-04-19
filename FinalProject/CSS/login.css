@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../Img/Bookshelf.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.logo img {
+    max-width: 150px; 
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #007bff; /* Change button background color */
+    color: white; /* Change button text color */
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+.button-container button:hover {
+    background-color: #0056b3; /* Change button background color on hover */
+}
+
+.button-container a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+}
