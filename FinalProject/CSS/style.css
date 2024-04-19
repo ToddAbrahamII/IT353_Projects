@@ -15,22 +15,42 @@ a{
 }
 
 /* navbar styling */
-.navbar{
-	display: flex;
-	height: 5rem;
-	justify-content: space-between;
-	align-items: center;
-	padding-top: 1rem;
-	border-bottom: 2px black solid;
-	text-decoration: none;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    border-bottom: 2px black solid;
 }
 
 /* logo style */
-.logo img{
-	width: 4rem;
-	height: 4rem;
-	margin-left:1rem;
+.logo img {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
 }
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav.mr-auto {
+    margin-right: auto;
+}
+
+.navbar-nav.ml-auto {
+    margin-left: auto;
+}
+
+.navbar-nav li {
+    margin-right: 1rem;
+}
+
+.navbar-nav li:last-child {
+    margin-right: 0;
+}
+
 
 .hamburger-menu{
 	padding-right: 1px;
@@ -94,88 +114,38 @@ cursor: pointer;
 		display: none;
 	}
 
-	.announcement_background{
-		background-image: url('../Img/Bookshelf.png'); 
-		background-size: cover; 
+	.announcement-background {
+		background-image: url('../Img/Bookshelf.png'); /* Replace with your image path */
+		background-size: cover;
 		background-position: center;
-		height: 400px; 
-		color: #fff;
-		text-align: center; 
-		padding: 20px;
-	}
-
-	.Welcome_Section {
-		position: absolute; 
-		top: 30%; 
-		left: 50%; 
-		transform: translate(-50%, -50%); 
-		background-color: rgba(0, 0, 0, 0.5); 
-		padding: 40px;
+		height: 400px;
 		color: #fff;
 		text-align: center;
-		backdrop-filter: blur(10px); 
+		padding: 20px;
+		position: relative; /* Ensures children with absolute position are positioned relative to this */
 	}
-
-	.Announcement {
-		position: relative;
-		display: none;
-		opacity: 0;
-		transition: opacity 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-	}
-
-	.Announcement.active {
-		display: block;
-		opacity: 1;
-		transition: opacity 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-	}
-
-	.announcement-button {
-		background-color: White;
-		color: #000;
-		padding: 12px 20px;
-		margin-top: 15px;
-		border: none;
-		cursor: pointer;
-		border-radius: 5px;
-    	font-size: 16px;
-		transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, width 1s;
-		width: 100px;
-	}
-
-	.announcement-button:hover{
-		background-color: black;
-		color: white;
-		width: 200px;
-	}
-
-	.announcement-arrows {
-		display: flex;
-		justify-content: space-between;
+	
+	.announcement-content {
 		position: absolute;
 		top: 50%;
-		width: 100%;
-		transform: translateY(-50%);
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1; /* Ensure it's on top of the image */
 	}
-
-	.announcement-content {
-		position: relative;
+	
+	.Announcement {
+		background-color: rgba(0, 0, 0, 0.8); /* Dark background color with some transparency */
 		padding: 20px;
-		background-color: rgba(0, 0, 0, 0.6); /* Dark translucent background */
-		color: #ffffff; /* Text color */
-		text-align: center;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		border-radius: 10px;
+		display: inline-block; /* Display as inline-block to wrap around the content */
 	}
 	
-	.announcement-content h1 {
-		margin-bottom: 10px;
+	.Announcement h1 {
+		color: white;
+		margin: 0; /* Remove default margin */
 	}
 	
-	.announcement-background {
-		padding: 20px; /* Add padding to the announcement background */
-	}
+		
 	
 
 	.image-container {
